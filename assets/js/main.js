@@ -95,3 +95,4 @@ function limparCampos() {
     const resultado = document.querySelector('#resultado');
     resultado.innerHTML = "";
 }
+// novo teste de alteração
