@@ -1,0 +1,73 @@
+/* importar fontes do google para o css */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* Variavel global:  */
+:root {
+  --primary-color: rgb(17, 86, 102); /* variavel começa com dois traços --nomeDaVariavel*/
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+/* Formatação geral usar um *{ */
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+/* Formatar corpo da pagina */
+body {
+  margin: 0px;
+  padding: 0px;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px; /*largura do formulario*/
+  margin: 50px auto; /*50px = margem superior e inferior - auto = lateral automatica*/
+  background: #fff; /*cor de fundo do container*/
+  padding: 20px; /*parte interna do formulario*/
+  border-radius: 10px;
+}
+
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+/* muda o tamanho da borda do input */
+form input:focus {
+  outline: 2px solid var(--primary-color );
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+/* quando passar o mouse sobre o botão muda a cor */
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.paragrafo-resultado, .bad {
+  background: rgb(109,255,182);
+  padding: 10px 20px;
+}
+
+.bad {
+  background: rgb(255,150,150);
+}

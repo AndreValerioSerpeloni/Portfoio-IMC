@@ -1,0 +1,43 @@
+<!--
+TABELA IMC (peso / altura * altura)
+IMC                         RESULTADO
+Menos do que 18,5           Abaixo do peso
+Entre 18,5 e 24,9           Peso normal
+Entre 25 e 29,9             Sobrepeso
+Entre 30 e 34,9             Obesidade grau 1
+Entre 35 e 39,9             Obesidade grau 2
+Mais do que 40              Obesidade grau 3
+-->
+
+<!DOCTYPE html>
+<html lang="pt - BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule seu IMC</title>
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- Atalho digite: "link:css"-->
+    
+</head>
+<body>
+    <!-- Criar Formulario da aplicação: -->
+    <section class="container"> <!--criando um container-->
+        <h1>Calcule seu IMC</h1>  <!--titulo do container-->
+            <form action="/" id="formulario" method="POST"> <!-- cria um formulario -->
+            <label for="peso">Peso</label> <!--O valor do "for" deve ser igual ao valor do atributo "id" do elemento de controle de entrada -->    
+            <input type="text" id="peso" name="peso"> <!--tipo= texto, id= peso, nome da caixa= peso--> 
+            <label for="altura">Altura</label> <!--O valor do "for" deve ser igual ao valor do atributo "id" do elemento de controle de entrada -->
+            <input type="text" id="altura" name="altura">
+            <button type="submit">Calcular</button> <!--Botão tipo: submit-->
+            <button type="button" onclick="limparCampos()">Limpar Campos</button> <!--desenvolvido por mim-->
+            <button type="button" onclick="fecharPagina()">Fechar Página</button> <!--desenvolvido por mim -->
+            </form>
+        
+        <div id="resultado"></div>
+    </section>
+
+</section>
+
+    <script src="./assets/js/main.js"></script>
+    
+</body>
+</html>
