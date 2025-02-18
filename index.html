@@ -24,9 +24,9 @@ Mais do que 40              Obesidade grau 3
         <h1>Calcule seu IMC</h1>  <!--titulo do container-->
             <form action="/" id="formulario" method="POST"> <!-- cria um formulario -->
             <label for="peso">Peso</label> <!--O valor do "for" deve ser igual ao valor do atributo "id" do elemento de controle de entrada -->    
-            <input type="text" id="peso" name="peso"> <!--tipo= texto, id= peso, nome da caixa= peso--> 
+            <input type="text" id="peso" name="peso" required> <!--tipo= texto, id= peso, nome da caixa= peso--> 
             <label for="altura">Altura</label> <!--O valor do "for" deve ser igual ao valor do atributo "id" do elemento de controle de entrada -->
-            <input type="text" id="altura" name="altura">
+            <input type="text" id="altura" name="altura" required>
             <button type="submit">Calcular</button> <!--Botão tipo: submit-->
             <button type="button" onclick="limparCampos()">Limpar Campos</button> <!--desenvolvido por mim-->
             <button type="button" onclick="fecharPagina()">Fechar Página</button> <!--desenvolvido por mim -->
@@ -34,8 +34,6 @@ Mais do que 40              Obesidade grau 3
         
         <div id="resultado"></div>
     </section>
-
-</section>
 
     <script src="./assets/js/main.js"></script>
     
